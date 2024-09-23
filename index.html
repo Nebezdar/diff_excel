@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка Excel-файла</title>
+</head>
+<body>
+<h2>Загрузите Excel файл и введите значение для суммирования</h2>
+<form action="index.php" method="post" enctype="multipart/form-data">
+    <label for="value">Введите значение (по умолчанию 2):</label>
+    <input type="number" name="value" id="value" value="2" step="0.01" required>
+    <br><br>
+    <label for="file">Выберите Excel файл (.xlsx):</label>
+    <input type="file" name="file" id="file" accept=".xlsx" required>
+    <br><br>
+    <button type="submit" name="submit">Изменить</button>
+</form>
+</body>
+</html>
